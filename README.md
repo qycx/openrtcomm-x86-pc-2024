@@ -49,4 +49,4 @@
 
 本项目以 **MIT 许可证**开源，完整授权条款见仓库根目录 [`LICENSE`](LICENSE) 文件。
 
-> 原始快照（`original-archive/openRtComm.zip.20241201.zip`）中未携带 `LICENSE` 文件，本档案在归档后补入了标准 MIT 文本，版权归属 **Qycx**，授权任何人在遵守 MIT 条款的前提下使用、复制、修改、分发本源码。原始 `README.md` 仅为 Gitee 建仓占位模板（无实质项目描述，已另存 `README.gitee.md` 保真）。
+> 原始快照（`original-archive/openRtComm.zip.20241201.zip`）中未携带 `LICENSE` 文件，本档案在归档后补入了标准 MIT 文本，授权任何人在遵守 MIT 条款的前提下使用、复制、修改、分发本源码。原始 `README.md` 仅为 Gitee 建仓占位模板（无实质项目描述，已另存 `README.gitee.md` 保真）。
