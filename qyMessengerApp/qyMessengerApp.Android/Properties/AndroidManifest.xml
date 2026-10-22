@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2" android:versionName="2.0" package="com.qycx.qymessenger" xmlns:tools="http://schemas.android.com/tools" android:installLocation="preferExternal">
+	<uses-sdk android:minSdkVersion="26" android:targetSdkVersion="31" />
+	<application android:name=".MyApplication" tools:replace="android:label" android:largeHeap="true" android:label="@string/appName" android:debuggable="true" android:requestLegacyExternalStorage="true" android:theme="@style/MainTheme"  android:networkSecurityConfig="@xml/network_config">
+		<receiver android:name=".NotificationDismissedReceiver" />
+
+	</application>
+	
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+</manifest>

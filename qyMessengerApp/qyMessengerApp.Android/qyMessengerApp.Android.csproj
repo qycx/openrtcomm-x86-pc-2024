@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B68C9D1-1D85-48D2-9909-3EEB2596D003}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6968b3a4-1835-46a3-ac5c-1ae33b475983}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>qyMessengerApp.Android</RootNamespace>
+    <AssemblyName>qyMessengerApp.Android</AssemblyName>
+    <Deterministic>True</Deterministic>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\VS2019\$(Configuration)\</OutputPath>
+    <BaseIntermediateOutputPath>..\..\..\VS2019\$(Platform)\obj\qyMessengerApp_Android\$(Configuration)</BaseIntermediateOutputPath>
+    <UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>
+    <DefineConstants>DEBUG;__USE_fg1__</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <MandroidI18n />
+    <AndroidKeyStore>false</AndroidKeyStore>
+    <AndroidSigningKeyStore>C:\Users\28610\qycx.jks</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>test,234</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>qycx</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>test,234</AndroidSigningKeyPass>
+    <AndroidStoreUncompressedFileExtensions>.mp3;.png;.arsc;.unity3d</AndroidStoreUncompressedFileExtensions>
+    <AndroidSupportedAbis>arm64-v8a</AndroidSupportedAbis>
+    <AndroidZipAlign>true</AndroidZipAlign>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\VS2019\$(Configuration)\</OutputPath>
+    <BaseIntermediateOutputPath>..\..\..\VS2019\$(Platform)\obj\qyMessengerApp_Android\$(Configuration)</BaseIntermediateOutputPath>
+    <UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AndroidKeyStore>true</AndroidKeyStore>
+    <AndroidSigningKeyStore>C:\Users\28610\qycx.jks</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>test,234</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>qycx</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>test,234</AndroidSigningKeyPass>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Export" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.AppCompat.Resources">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Browser">
+      <Version>1.2.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout">
+      <Version>2.0.4</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Legacy.Support.V13">
+      <Version>1.0.0.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Legacy.Support.V4">
+      <Version>1.0.0.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData">
+      <Version>2.2.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process">
+      <Version>2.2.0.4</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="4.7.0.1239" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.Google.Android.Material">
+      <Version>1.0.0.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcceptReceiver.cs" />
+    <Compile Include="CancelIntentService.cs" />
+    <Compile Include="AcceptIntentService.cs" />
+    <Compile Include="Activity_changePassword.cs" />
+    <Compile Include="Activity_dlgTalk.cs" />
+    <Compile Include="Activity_dlgTalk_av.cs" />
+    <Compile Include="Activity_dlgTalk_detail.cs" />
+    <Compile Include="Activity_notification.cs" />
+    <Compile Include="Activity_qmcLogin.cs" />
+    <Compile Include="Adapter_dlgTalk_msgList.cs" />
+    <Compile Include="Adapter_imObjList.cs" />
+    <Compile Include="Adapter_msgList.cs" />
+    <Compile Include="AutoFitTextureView.cs" />
+    <Compile Include="CancelReceiver.cs" />
+    <Compile Include="Fragment_dlgTalk_imGrp_detail.cs" />
+    <Compile Include="Fragment_dlgTalk_msgr_detail.cs" />
+    <Compile Include="Fragment_null.cs" />
+    <Compile Include="geltest\MyDraw.cs" />
+    <Compile Include="geltest\PerformanceTimer.cs" />
+    <Compile Include="geltest\Renderer.cs" />
+    <Compile Include="geltest\TextureLoader.cs" />
+    <Compile Include="NotificationDismissedReceiver.cs" />
+    <Compile Include="public\clipboardFunc.cs" />
+    <Compile Include="public\commonSock_android.cs" />
+    <Compile Include="public\ctxQmc_gui.cs" />
+    <Compile Include="public\displayShortTime.cs" />
+    <Compile Include="public\dlgTalk_procTask_transferFileReq.cs" />
+    <Compile Include="public\file_android.cs" />
+    <Compile Include="public\fillList_imObj.cs" />
+    <Compile Include="public\getSystem.cs" />
+    <Compile Include="public\mySaveSecret.cs" />
+    <Compile Include="public\MyThread.cs" />
+    <Compile Include="public\playAudio_webRtc.cs" />
+    <Compile Include="public\prepare.cs" />
+    <Compile Include="public\qdc\decObj_a_mediaCodec.cs" />
+    <Compile Include="public\qdc\decObj_a_mediaCodec_async.cs" />
+    <Compile Include="public\qmcFunc_android.cs" />
+    <Compile Include="public\qmcProc_android.cs" />
+    <Compile Include="public\qyMcMain_qyMc_proc.cs" />
+    <Compile Include="public\showPopupMenu.cs" />
+    <Compile Include="public\taskDataFunc_android.cs" />
+    <Compile Include="public\test\testDecodeAACAsyn.cs" />
+    <Compile Include="public\test\testDec_mediaCodec1_mp3.cs" />
+    <Compile Include="public\ttl_readPkt.cs" />
+    <Compile Include="qmcBaseActivity.cs" />
+    <Compile Include="camera_RenderThread.cs" />
+    <Compile Include="dlgTalk_av_Renderer.cs" />
+    <Compile Include="Fragment_dlgTalk_av2.cs" />
+    <Compile Include="public\isCliGl\qisD3d_open.cs" />
+    <Compile Include="public\isCliGl\qmcD3dFunc.cs" />
+    <Compile Include="public\isCliGl\t1Frm.cs" />
+    <Compile Include="public\isCliGl\wallMemCommon.cs" />
+    <Compile Include="public\myGlFunc.cs" />
+    <Compile Include="public\qdc\encObj_mediaCodec.cs" />
+    <Compile Include="public\SimpleTexture.cs" />
+    <Compile Include="public\test\Fragment_test2.cs" />
+    <Compile Include="public\test\Fragment_test.cs" />
+    <Compile Include="MyTextureView.cs" />
+    <Compile Include="public\audioRecorder_android.cs" />
+    <Compile Include="public\audioRecorder_dsound.cs" />
+    <Compile Include="public\camera\MyCamera.cs" />
+    <Compile Include="public\confReq.cs" />
+    <Compile Include="public\cusModule_ffmpeg.cs" />
+    <Compile Include="public\cusModule_mediaCodec.cs" />
+    <Compile Include="public\DlgInstantAssistant.cs" />
+    <Compile Include="public\DlgNotification.cs" />
+    <Compile Include="public\dlgPolicyIsClient.cs" />
+    <Compile Include="public\DlgSelectAvCompressor.cs" />
+    <Compile Include="public\DlgTalk.cs" />
+    <Compile Include="public\dlgTalkProc.cs" />
+    <Compile Include="MyApplication.cs" />
+    <Compile Include="MyCameraStateCallback.cs" />
+    <Compile Include="CompareSizesByArea.cs" />
+    <Compile Include="ConfirmationDialog.cs" />
+    <Compile Include="ErrorDialog.cs" />
+    <Compile Include="FragmentPagerAdapter_dlgTalk.cs" />
+    <Compile Include="Fragment_dlgTalk_msgList.cs" />
+    <Compile Include="Fragment_imObjList.cs" />
+    <Compile Include="Fragment_msgList.cs" />
+    <Compile Include="ImageAvailableListener.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Fragment_me.cs" />
+    <Compile Include="FragmentPagerAdapter_main.cs" />
+    <Compile Include="PreviewCaptureStateCallback.cs" />
+    <Compile Include="public\dlgTalkProc_help.cs" />
+    <Compile Include="public\dlgTalkPublic.cs" />
+    <Compile Include="public\dlgTalk_capImgProc.cs" />
+    <Compile Include="public\dlgTalk_procTask.cs" />
+    <Compile Include="public\dlgTalk_procTask_transferAvInfo.cs" />
+    <Compile Include="public\dlgTalk_videoConference.cs" />
+    <Compile Include="public\doCmd_startAvCall.cs" />
+    <Compile Include="public\dumpAudio.cs" />
+    <Compile Include="public\getPolicyIsClient.cs" />
+    <Compile Include="public\get_conf_state.cs" />
+    <Compile Include="public\glFunc.cs" />
+    <Compile Include="public\GuiShareProc.cs" />
+    <Compile Include="public\help_getDlgTalkVar.cs" />
+    <Compile Include="public\loadCusModule_android.cs" />
+    <Compile Include="public\mainWnd_procMsg.cs" />
+    <Compile Include="public\mcThreadProc_bgWall.cs" />
+    <Compile Include="public\playAudio_android.cs" />
+    <Compile Include="public\playVideo_android.cs" />
+    <Compile Include="public\policyIsClientFunc.cs" />
+    <Compile Include="public\qdcFunc_mediaCodec.cs" />
+    <Compile Include="public\qdc\decObj_mediaCodec.cs" />
+    <Compile Include="public\qmcDrawTmpl.cs" />
+    <Compile Include="public\qmcPlayAudio.cs" />
+    <Compile Include="public\old\qmcPlayVideo.cs" />
+    <Compile Include="public\qmcSound_dx.cs" />
+    <Compile Include="public\qmcVideoCapture_dx.cs" />
+    <Compile Include="public\qmShellPublic.cs" />
+    <Compile Include="public\qyMcMainWndProc_isCli.cs" />
+    <Compile Include="public\refreshTalkerList.cs" />
+    <Compile Include="public\saveTexture.cs" />
+    <Compile Include="public\TableItem.cs" />
+    <Compile Include="public\talkDraw.cs" />
+    <Compile Include="public\test.cs" />
+    <Compile Include="public\test\CameraUtils.cs" />
+    <Compile Include="public\test\ScaledDrawable2d.cs" />
+    <Compile Include="public\test\testEnc_mediaCodec.cs" />
+    <Compile Include="public\test\testEnc_mediaCodec1.cs" />
+    <Compile Include="public\tmpFunc_Droid.cs" />
+    <Compile Include="public\tmpJniFunc.cs" />
+    <Compile Include="public\tmpResource.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tabbar.xml" />
+    <AndroidResource Include="Resources\layout\Toolbar.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
+    <AndroidResource Include="Resources\drawable\tab_about.png" />
+    <AndroidResource Include="Resources\drawable\tab_feed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_main.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_qmcLogin.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tab_menu_bg.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tab_menu_text.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_alert2.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\btn_selctor_choose.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxhdpi\bg_btn_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxhdpi\bg_btn_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_alert1.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_fg.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_contactRow.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CustomSelector.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Vegetables.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_contactMsgRow.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_grpRow.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_grpMsgRow.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_dlgTalk_msgRow.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_activity_dlgTalk_av.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_fg_dlgTalk_av.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\notify_avCall.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\custom_background.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\pic640x480.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_yesCancel.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_fg_test.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_fg_dlgTalk_av_tool_more.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_fg_me.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\dumpPcm.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bj852x480.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_test.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_msgList_topMenu.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_imObjList_topMenu.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_activity_dlgTalk_detail.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_activity_dlgTalk.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_fg_imObjList.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_fg_msgList.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_fg_dlgTalk_msgList.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_fg_dlgTalk_msgr_detail.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_fg_dlgTalk_imGrp_detail.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\grp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tmpGrp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\notify_avCall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\down_selector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\left_selector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\long_focus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\long_focus_selector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\right_selector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\short_focus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\short_focus_selector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\up_selector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\popwin_layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\popwin_item.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\anim_pop.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\down_gesture_selector.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\long_focus_gesture_selector.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\left_gesture_selector.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\right_gesture_selector.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\short_focus_gesture_selector.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\up_gesture_selector.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\pull_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\pull_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\nvr_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\permission_dialog_shape.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\alert_permission_dialog.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\edit_style_text.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\receive.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout-land\layout_qmcLogin.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\layout_change_passwd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <TransformFile Include="Resources\layout\alert_notification.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\button_selector.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\text_color_selector.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\xml\network_config.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\myBindingClassLibrary\myBindingClassLibrary.csproj">
+      <Project>{c08e5c1d-0b9f-4bea-99f6-6e2414d1b3f3}</Project>
+      <Name>myBindingClassLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\myBindingClassLibrary_autosize\myBindingClassLibrary_autosize.csproj">
+      <Project>{a2a69b21-156c-49a8-a30c-fcbdfbd20cce}</Project>
+      <Name>myBindingClassLibrary_autosize</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\myBindingClassLibrary_easypermission\myBindingClassLibrary_easypermission.csproj">
+      <Project>{cc2ab90d-74db-4228-8737-fd8963547920}</Project>
+      <Name>myBindingClassLibrary_easypermission</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\myBindingClassLibrary_ffmpeg\myBindingClassLibrary_ffmpeg.csproj">
+      <Project>{83285130-6695-4535-b092-bdd24a298506}</Project>
+      <Name>myBindingClassLibrary_ffmpeg</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\myBindingClassLibrary_gles\myBindingClassLibrary_gles.csproj">
+      <Project>{4163eeb4-fb0c-4092-b315-98cc1e3fce95}</Project>
+      <Name>myBindingClassLibrary_gles</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\myBindingClassLibrary_tmpJavaLib\myBindingClassLibrary_tmpJavaLib.csproj">
+      <Project>{6f116e63-6702-4ecc-8c2a-1793fcfd3713}</Project>
+      <Name>myBindingClassLibrary_tmpJavaLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\qyMessengerApp\qyMessengerApp.csproj">
+      <Project>{3fabcd85-4d74-4b82-848c-c89408d7958e}</Project>
+      <Name>qyMessengerApp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties TriggeredFromHotReload="False" XamarinHotReloadDebuggerTimeoutExceptionqyMessengerAppAndroidHideInfoBar="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

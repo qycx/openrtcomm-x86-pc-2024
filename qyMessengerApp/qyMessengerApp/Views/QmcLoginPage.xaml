@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="qyMessengerApp.Views.QmcLoginPage"
+             Title="登录">
+    <StackLayout VerticalOptions="Start" Margin="10">
+        <Label HeightRequest="120" />
+        <Label FontSize="50"
+               FontAttributes="Bold" 
+               x:Name="login_title"/>
+        <Label 
+            x:Name="server_ip_address_title"/>
+        <Entry x:Name="server_ip_address"
+                HeightRequest="50"
+                WidthRequest="100"/>
+        <Label 
+               x:Name="username_title"/>
+        <Entry x:Name="username"
+                HeightRequest="50"
+                WidthRequest="100"/>
+        <Label x:Name="password_title"/>
+        <Entry x:Name="password"
+                HeightRequest="50"
+                IsPassword="true"
+                WidthRequest="100"/>
+        <Button
+            x:Name="login_btn"
+            TextColor="#fff"
+            FontSize="26"
+            BackgroundColor="ForestGreen"
+            Clicked="Login_do"/>
+    </StackLayout>
+</ContentPage>

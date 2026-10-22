@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+  <style name="MainTheme" parent="MainTheme.Base">
+    <!-- As of Xamarin.Forms 4.6 the theme has moved into the Forms binary -->
+    <!-- If you want to override anything you can do that here. -->
+    <!-- Underneath are a couple of entries to get you started. -->
+
+    <!-- Set theme colors from https://aka.ms/material-colors -->
+    <!-- colorPrimary is used for the default action bar background -->
+    <!--<item name="colorPrimary">#2196F3</item>-->
+    <!-- colorPrimaryDark is used for the status bar -->
+    <!--<item name="colorPrimaryDark">#1976D2</item>-->
+    <!-- <item name="android:windowTranslucentStatus" tools:ignore="NewApi">true</item> -->
+    <!--<item name="colorAccent">#FF4081</item>-->
+	 
+
+  </style>
+	<style name="horizontal_line_style">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">1px</item>
+		<item name="android:background">@color/horizontal_line_gray_800</item>
+	</style>
+
+	<style name="vertical_line_style">
+		<item name="android:layout_width">1px</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:background">@color/vertical_line_gray_800</item>
+	</style>
+</resources>

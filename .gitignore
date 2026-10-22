@@ -1,0 +1,27 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+
+/myBindingClassLibrary_autosize/obj/
+/qyMessengerApp/.vs
+/myBindingClassLibrary_easypermission/obj/
+/myBindingClassLibrary/obj/
+/myBindingClassLibrary_ffmpeg/obj/
+/myBindingClassLibrary_gles/obj/
+/myBindingClassLibrary_tmpJavaLib/obj/
+/qyMessengerApp/qyMessengerApp/obj/
+/qyMessengerApp/qyMessengerApp.Android/obj/
+/myBindingClassLibrary_autosize/bin/
+
+/myBindingClassLibrary_easypermission/bin/
+/myBindingClassLibrary/bin/
+/myBindingClassLibrary_ffmpeg/bin/
+/myBindingClassLibrary_gles/bin/
+/myBindingClassLibrary_tmpJavaLib/bin/
+/qyMessengerApp/qyMessengerApp/bin/
+/qyMessengerApp/qyMessengerApp.Android/bin/
+/qyMessengerApp/qyMessengerApp.Android/qyMessengerApp.Android.csproj.user
+/qyMessengerApp/qyMessengerApp.Android/qyMessengerApp.Android.csproj.user
+/qyMessengerApp/qyMessengerApp.iOS/obj
+/.vs/qyMessengerApp
